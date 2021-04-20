@@ -31,11 +31,11 @@ Description:
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Username Enumeration
 
 Description:
 
-<img src="green-vuln1.gif">
+<img src="username_enumeration.gif">
 
 Vulnerability #2: __________________
 
