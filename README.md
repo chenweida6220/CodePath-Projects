@@ -57,7 +57,7 @@ Description:
 
 Description: Insecure Direct Object Reference is when code accesses a restricted resource based on user input but fails to verify user's authorization to access that resource.
 
-Through changing the _id_ parameter on the red site's "Find a Saleperson" tab, it is explicitly shown that entering the ids from 1-9 shows the salespeople in the database that are unrestricted/publicized, but when entering ids of 10 and 11, it is clearly written in parenthesis that their information is not meant to be shown as of yet.
+Through changing the _id_ parameter on the red site's "Find a Saleperson" tab, it is explicitly shown that entering the ids from 1-9 shows the salespeople in the database that are unrestricted/publicized, but when entering ids of 10 and 11, it is clearly written in parenthesis that their information is not meant to be shown.
 
 <img src="insecure_direct_object_reference.gif">
 
