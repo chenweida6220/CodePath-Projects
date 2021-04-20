@@ -17,13 +17,13 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 ## Blue
 
-Vulnerability #1: __________________
+### Vulnerability #1: __________________
 
 Description:
 
 <img src="blue-vuln1.gif">
 
-Vulnerability #2: __________________
+### Vulnerability #2: __________________
 
 Description:
 
@@ -44,7 +44,7 @@ Using the _inspect_ element, I analyzed both the bolded and unbolded login error
 
 <img src="username_enumeration.gif">
 
-Vulnerability #2: __________________
+### Vulnerability #2: __________________
 
 Description:
 
@@ -53,13 +53,15 @@ Description:
 
 ## Red
 
-Vulnerability #1: __________________
+### Vulnerability #1: Insecure Direct Object Reference
 
-Description:
+Description: Insecure Direct Object Reference is when code accesses a restricted resource based on user input but fails to verify user's authorization to access that resource.
 
-<img src="red-vuln1.gif">
+Through changing the _id_ parameter on the red site's "Find a Saleperson" tab, it is explicitly shown that entering the ids from 1-9 shows the salespeople in the database that are unrestricted/publicized, but when entering ids of 10 and 11, it is clearly written in parenthesis that their information is not meant to be shown as of yet.
 
-Vulnerability #2: __________________
+<img src="insecure_direct_object_reference.gif">
+
+### Vulnerability #2: __________________
 
 Description:
 
