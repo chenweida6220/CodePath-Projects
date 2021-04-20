@@ -21,7 +21,7 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 Description: SQl Injection or SQLi is a type of cybersecurity attack that targets databases using specifically crafted SQL statements. The goal is to trick the system(s) into doing unexpected and undesired things. SQL Injection occurs when an application fails to sanitize untrusted data.
 
-In CodePath's Unit 9 Concept Review section, they provided the SQL statement, _' OR 1=1 --'_. It may not have been a hint or it may have been a hint, but just substituting it for the value of _id_ in the blue site's "Find a Saleperson" tab does not work. I took my chances and modified _' OR 1=1 --'_ into _' OR 1=1 '_ and tried substituing it for the value of _id_ and it returns a "Database query failed."
+In CodePath's Unit 9 Concept Review section, they provided the SQL statement, _' OR 1=1 --'_. This may or may not have been a hint, but just substituting it for the value of _id_ in the blue site's "Find a Saleperson" tab does not work. I took my chances and modified _' OR 1=1 --'_ into _' OR 1=1 '_ and tried substituting it for the value of _id_ and it returns a "Database query failed."
 
 <img src="sql_injection.gif">
 
