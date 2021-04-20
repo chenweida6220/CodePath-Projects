@@ -34,6 +34,10 @@ Description:
 Vulnerability #1: Username Enumeration
 
 Description:
+Username Enumeration is the process of developing a list of all valid usernames on a server or web application and it becomes possible if the server or web application provides a clue as to whether or not the username exists.
+
+When using CodePath's supplied username, "jmonroe99", which already exists, the green site displayed a login error in bold.
+But when using a madeup username, "kevin123", which under the assumption that there is no username like this in the server, the green site displayed an unbolded login error.
 
 <img src="username_enumeration.gif">
 
