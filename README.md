@@ -31,7 +31,7 @@ Description:
 
 ## Green
 
-# Vulnerability #1: Username Enumeration
+### Vulnerability #1: Username Enumeration
 
 Description:
 Username Enumeration is the process of developing a list of all valid usernames on a server or web application and it becomes possible if the server or web application provides a clue as to whether or not the username exists.
