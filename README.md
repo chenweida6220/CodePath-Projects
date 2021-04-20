@@ -46,11 +46,13 @@ Using the _inspect_ element, I analyzed both the bolded and unbolded login error
 
 <img src="username_enumeration.gif">
 
-### Vulnerability #2: __________________
+### Vulnerability #2: Cross-Site Scripting
 
-Description:
+Description: Cross-Site Scripting (aka _XSS_) is when code puts user-supplied data in the response without sanitizing the data first.
 
-<img src="green-vuln2.gif">
+CodePath gave the XSS script, _<script>alert('Mallory found the XSS!');</script>_ as an hint. The "Contact" page is a common ground for inputting some XSS scripts as users are free to post comments.
+
+<img src="cross_site_scripting.gif">
 
 
 ## Red
