@@ -31,13 +31,16 @@ Description:
 
 ## Green
 
-Vulnerability #1: Username Enumeration
+# Vulnerability #1: Username Enumeration
 
 Description:
 Username Enumeration is the process of developing a list of all valid usernames on a server or web application and it becomes possible if the server or web application provides a clue as to whether or not the username exists.
 
 When using CodePath's supplied username, "jmonroe99", which already exists, the green site displayed a login error in bold.
 But when using a madeup username, "kevin123", which under the assumption that there is no username like this in the server, the green site displayed an unbolded login error.
+Although both errors returns "Log in was unsuccessful.", the only visual difference was one was bold and the other was not.
+
+Using the _inspect_ element, I analyzed both the bolded and unbolded login errors and it turns out there are two _span_ tag classes -- "failure", which results in the bolded login error and "failed", which results in an unbolded login error.
 
 <img src="username_enumeration.gif">
 
