@@ -73,6 +73,7 @@ Used an auto-submitting script to steal the user's session and forge a requet to
 
 <img src="cross_site_request_forgery.gif">
 Script Used:
+
 ```
 
 <!DOCTYPE html>
