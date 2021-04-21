@@ -1,6 +1,6 @@
 # Project 9 - Pentesting Live Targets
 
-Time spent: **X** hours spent in total
+Time spent: **7** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -25,11 +25,13 @@ In CodePath's Unit 9 Concept Review section, they provided the SQL statement, _'
 
 <img src="sql_injection.gif">
 
-### Vulnerability #2: __________________
+### Vulnerability #2: Session Hijacking/Fixation
 
-Description:
+Description: Session Hijacking/Fixation is an attack where the attacker steals a user's active session with a website to gain unauthorizaed access to actions and information on that site.
 
-<img src="blue-vuln2.gif">
+Used the site, https://35.184.88.145/red/public/hacktools/change_session_id.php, to change the session identification. On the Incognito Chrome browser, I logged in with credentials and changed the session id, which I copied over to my original unlogged-in site. 
+
+<img src="session_hijacking_fixation.gif">
 
 ## Green
 
@@ -101,4 +103,6 @@ Script Used:
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Describe any challenges encountered while doing the work.
+N/A
+
