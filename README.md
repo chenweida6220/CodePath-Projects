@@ -73,7 +73,7 @@ Description: Cross-Site Request Forgery is an attack in which a user is tricked 
 
 <img src="cross_site_request_forgery.gif">
 Script Used:
-'''html
+```html
 <!DOCTYPE html>
 <html>
 
@@ -93,7 +93,7 @@ Script Used:
 </body>
 
 </html>
-'''
+```
 
 
 ## Notes
