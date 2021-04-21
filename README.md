@@ -69,11 +69,10 @@ Through changing the _id_ parameter on the red site's "Find a Saleperson" tab, i
 
 Description: Cross-Site Request Forgery is an attack in which a user is tricked into performing actions on another site by inadvertently clicking on a link or submitting a form. It is not a genuine user request.
 
-
+Used an auto-submitting script to steal the user's session and forge a requet to the database.
 
 <img src="cross_site_request_forgery.gif">
 Script Used:
-
 ```
 
 <!DOCTYPE html>
